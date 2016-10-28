@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wills.mapper.UserMapper">
+ 
+  <select id="findUserInfo" resultType="com.wills.model.User">
+    select name, age,password from user;
+  </select>
+  
+  <select id="selectUserForUpdate" resultType="com.wills.model.User">
+    select name, age,password from user where name=#{uname} for update;
+  </select>
+ 
+ <select id="update">
+    update user set name=#{unamea} where name=#{unameb};
+  </select>	
+ 
+</mapper>
