@@ -1,4 +1,4 @@
-package com.sioeye.audit;
+package com.wills;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
